@@ -2,98 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Best ToDo</title>
+    <title>ToDoList</title>
     <style>
+        .toDoList_element {
+            width: 200px;
+            border: 1px solid seashell;
+        }
         body {
-            background: moccasin;
+            background: gainsboro;
         }
-        top {
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            font-size: 30pt;
-            color: cornflowerblue;
-        }
-        quote {
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            font-size: 12pt;
-            font-style: italic;
-            color: dodgerblue;
-        }
-        common {
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            font-size: 12pt;
-            color: darkblue;
-        }
-        information {
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            font-size: 9pt;
-            color: darkslateblue;
-            font-style: italic;
-        }
-
     </style>
 </head>
 <body>
-<div class="Шапка страницы">
-    <div class="Заголовок">
-        <top>BEST <i><b>ToDoList</b></i><br/>
-        YOU HAVE EVER SEEN</top>
+<div class="header">
+    <div class="header_title">
+        <h1>ToDoList</h1>
     </div>
-    <div class="Цитата">
-        <hr color="darkblue" size="3" width="420" align="left">
-        <blockquote>
-            <quote>Раньше я пользовался обычным списком дел,<br/>
-                но позже перешёл на BEST TODOLIST и ещё<br/>
-                ни разу не пожалел об этом.<br/>
-                Честно.</quote>
-        </blockquote>
+</div>
+<div class="toDoList">
+    <div class="toDoList_textfield">
 
     </div>
-</div>
-<hr color="darkblue" size="3" width="420" align="left">
-<div class="Элементы списка дел">
-    <div class="Выбор темы для списка дел">
-        <common>О чём будет ваш список дел?</common> <br/>
-        <select size="4">
-            <option disabled>Возможные темы:</option>
-            <option>Список покупок</option>
-            <option>Домашнее задание</option>
-            <option>Планы на будущее</option>
-        </select>
+    <div class="toDoList_list">
+        <div class="toDoList_element"><input type="button" id="list-element1">HTML<input type="button"></div>
+        <div class="toDoList_element"><input type="button" id="list-element2">CSS<input type="button"></div>
+        <div class="toDoList_element"><input type="button" id="list-element3">JS<input type="button"></div>
+        <div class="toDoList_element"><input type="button" id="list-element4">JS Tools<input type="button"></div>
     </div>
-    <hr color="darkblue" size="1" width="300" align="left">
-    <div class="Сам список дел">
-        <common>Отметьте выполненые пункты!</common><br/>
-        <input type="checkbox" id="case 1" name="Первое дело">
-        <label for="case 1">Погладить котю</label><br/>
-        <input type="checkbox" id="case 2" name="Второе дело">
-        <label for="case 2">Покормить собачку</label><br/>
-        <input type="checkbox" id="case 3" name="Третье дело">
-        <label for="case 3">У меня лапки</label><br/>
-    </div>
-    <hr color="darkblue" size="1" width="300" align="left">
-    <div class="Обратная связь">
-        <common>Спасибо, что воспользовались нашим<br/>
-            списком дел! Оставьте ваше мнение о<br/>
-        нём здесь:</common>
-        <br/>
-        <textarea name="Feedback"></textarea>
+    <div class="toDoList_options">
+        <button type="button">Test</button>
     </div>
 </div>
-<hr color="darkblue" size="3" width="420" align="left">
-<div class="Информация">
-    <div class="О сайте">
-        <information>
-           О НАС:<br/>
-           Сайт создан при поддежке фонда кино<br/>
-           а так же министерства культуры РФ.<br/>
-        </information>
-    </div>
-    <div class="Контакты:">
-        <information>
-            КОНТАКТЫ:<br/>
-            <a href="https://polis.mail.ru">Крутые чуваки</a><br/>
-            <a href="https://vk.com/ilopatinsky">The Creator</a>
-        </information>
+<div class="bottom">
+    <div class="bottom_contacts">
+        КОНТАКТЫ:<br/>
+        <a href="https://polis.mail.ru">Крутые чуваки</a><br/>
+        <a href="https://vk.com/ilopatinsky">The Creator</a>
     </div>
 </div>
 </body>
