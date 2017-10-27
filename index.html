@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todos</title>
+</head>
+<body>
+
+<div class="todos-header">
+    <h1 class="title">todos</h1>
+</div>
+
+<div class="todos-main">
+    <div class="todos-addNew">
+        <button class="todos-addNew_select-all" aria-label="Select all tasks"></button>
+        <input class="todos-addNew_input"
+               placeholder="What needs to be done?"
+               aria-label="Input field for new task" />
+    </div>
+
+    <div class="todos-list">
+        <div class="todos-item">
+
+            <input type="checkbox"
+                   class="todos-item_notready-checkbox"
+                   aria-label="Mark task as ready" />
+
+            <textarea class="todos-item_text">HTML</textarea>
+
+            <button class="todos-item_remove-button"
+                    aria-label="Remove task">
+            </button>
+
+        </div>
+
+        <div class="todos-item __ready">
+
+            <input type="checkbox"
+                   checked="checked"
+                   class="todos-item_ready-checkbox"
+                   aria-label="Mark task as not ready" />
+
+            <textarea class="todos-item_text">CSS</textarea>
+
+            <button class="todos-item_remove-button"
+                    aria-label="Remove task">
+            </button>
+
+        </div>
+
+        <div class="todos-item">
+
+            <input type="checkbox"
+                   class="todos-item_notready-checkbox"
+                   aria-label="Mark task as ready" />
+
+            <textarea class="todos-item_text">JS</textarea>
+
+            <button class="todos-item_remove-button"
+                    aria-label="Remove task">
+            </button>
+
+        </div>
+
+        <div class="todos-item">
+
+            <input type="checkbox"
+                   class="todos-item_notready-checkbox"
+                   aria-label="Mark task as ready" />
+
+            <textarea class="todos-item_text">JS Tools</textarea>
+
+            <button class="todos-item_remove-button"
+                    aria-label="Remove task">
+            </button>
+
+        </div>
+    </div>
+
+    <div class="todos-options">
+
+        <div class="todos-options_item-quantity"
+             aria-label="Quantity of tasks to do">3 todo</div>
+
+        <div class="todos-options_filters">
+            <button class="todos-options_filters __active"
+                    data-filter="all"
+                    aria-label="Show all tasks">All</button>
+
+            <button class="todos-options_filters"
+                    data-filter="unselected"
+                    aria-label="Show active tasks">Active</button>
+
+            <button class="todos-options_filters __active"
+                    data-filter="selected"
+                    aria-label="Show completed tasks">Completed</button>
+        </div>
+
+        <button class="todos-options_delete-completed"
+                aria-label="Delete completed tasks">Clear completed</button>
+
+    </div>
+</div>
+</body>
+</html>
