@@ -11,9 +11,9 @@
 </div>
 
 <div class="todos-main">
-    <div class="todos-addNew">
-        <button class="todos-addNew_select-all" aria-label="Select all tasks"></button>
-        <input class="todos-addNew_input"
+    <div class="todos-add-new">
+        <button class="todos-add-new_select-all" aria-label="Select all tasks"></button>
+        <input class="todos-addnew_input"
                placeholder="What needs to be done?"
                aria-label="Input field for new task" />
     </div>
@@ -22,7 +22,7 @@
         <div class="todos-item">
 
             <input type="checkbox"
-                   class="todos-item_notready-checkbox"
+                   class="todos-item_checkbox"
                    aria-label="Mark task as ready" />
 
             <textarea class="todos-item_text">HTML</textarea>
@@ -37,7 +37,7 @@
 
             <input type="checkbox"
                    checked="checked"
-                   class="todos-item_ready-checkbox"
+                   class="todos-item_checkbox"
                    aria-label="Mark task as not ready" />
 
             <textarea class="todos-item_text">CSS</textarea>
@@ -51,7 +51,7 @@
         <div class="todos-item">
 
             <input type="checkbox"
-                   class="todos-item_notready-checkbox"
+                   class="todos-item_checkbox"
                    aria-label="Mark task as ready" />
 
             <textarea class="todos-item_text">JS</textarea>
@@ -65,7 +65,7 @@
         <div class="todos-item">
 
             <input type="checkbox"
-                   class="todos-item_notready-checkbox"
+                   class="todos-item_checkbox"
                    aria-label="Mark task as ready" />
 
             <textarea class="todos-item_text">JS Tools</textarea>
@@ -77,26 +77,26 @@
         </div>
     </div>
 
-    <div class="todos-options">
+    <div class="todos-actionbar">
 
-        <div class="todos-options_item-quantity"
+        <div class="todos-actionbar_item-quantity"
              aria-label="Quantity of tasks to do">3 todo</div>
 
-        <div class="todos-options_filters">
-            <button class="todos-options_filters __active"
+        <div class="todos-actionbar_filters">
+            <button class="todos-filter __active"
                     data-filter="all"
                     aria-label="Show all tasks">All</button>
 
-            <button class="todos-options_filters"
+            <button class="todos-filter"
                     data-filter="unselected"
                     aria-label="Show active tasks">Active</button>
 
-            <button class="todos-options_filters __active"
+            <button class="todos-filter"
                     data-filter="selected"
                     aria-label="Show completed tasks">Completed</button>
         </div>
 
-        <button class="todos-options_delete-completed"
+        <button class="todos-actionbar_delete-completed"
                 aria-label="Delete completed tasks">Clear completed</button>
 
     </div>
